@@ -68,7 +68,7 @@ const handleEdit = (id) => {
 
     //get input fields of task which want to be updated
     const input = document.querySelector(`input[data-id="${id}"]`);
-    if (input && input.value.length > 0) {
+    if (input) {
         if (!checkLength(input.value)) {
             return;
         };
